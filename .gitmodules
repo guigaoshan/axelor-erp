@@ -1,0 +1,51 @@
+[submodule "axelor-account"]
+	path = axelor-account
+	url = git@github.com:axelor/axelor-account.git
+[submodule "axelor-account-organisation"]
+	path = axelor-account-organisation
+	url = git@github.com:axelor/axelor-account-organisation.git
+[submodule "axelor-app"]
+	path = axelor-app
+	url = git@github.com:axelor/axelor-app.git
+[submodule "axelor-base"]
+	path = axelor-base
+	url = git@github.com:axelor/axelor-base.git
+[submodule "axelor-consulting"]
+	path = axelor-consulting
+	url = git@github.com:axelor/axelor-consulting.git
+[submodule "axelor-crm"]
+	path = axelor-crm
+	url = git@github.com:axelor/axelor-crm.git
+[submodule "axelor-data"]
+	path = axelor-data
+	url = git@github.com:axelor/axelor-data.git
+[submodule "axelor-exception"]
+	path = axelor-exception
+	url = git@github.com:axelor/axelor-exception.git
+[submodule "axelor-googleapps"]
+	path = axelor-googleapps
+	url = git@github.com:axelor/axelor-googleapps.git
+[submodule "axelor-marketing"]
+	path = axelor-marketing
+	url = git@github.com:axelor/axelor-marketing.git
+[submodule "axelor-message"]
+	path = axelor-message
+	url = git@github.com:axelor/axelor-message.git
+[submodule "axelor-organisation"]
+	path = axelor-organisation
+	url = git@github.com:axelor/axelor-organisation.git
+[submodule "axelor-parent"]
+	path = axelor-parent
+	url = git@github.com:axelor/axelor-parent.git
+[submodule "axelor-production"]
+	path = axelor-production
+	url = git@github.com:axelor/axelor-production.git
+[submodule "axelor-socialnetwork"]
+	path = axelor-socialnetwork
+	url = git@github.com:axelor/axelor-socialnetwork.git
+[submodule "axelor-supplychain"]
+	path = axelor-supplychain
+	url = git@github.com:axelor/axelor-supplychain.git
+[submodule "axelor-tool"]
+	path = axelor-tool
+	url = git@github.com:axelor/axelor-tool.git
