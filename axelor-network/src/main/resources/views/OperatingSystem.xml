@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://apps.axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://apps.axelor.com/xml/ns/object-views http://apps.axelor.com/xml/ns/object-views/object-views_0.9.xsd">
+
+  <!-- VIEW -->
+  <grid name="operating-system-grid" title="Operating Systems">
+    <field name="name" />
+    <field name="type" />
+    <field name="x32" />
+  </grid>
+
+  <form name="operating-system-form" title="Operating System" cols="6" onNew="action-operating-system-attrs-on-new">
+    <field name="name" />
+    <field name="type" />
+    <field name="x32" />
+    <field name="serverTypes" grid-view="server-type-grid" form-view="server-type-form" colSpan="6" />
+  </form>
+  
+  <selection name="operating-system-type">
+  	<option value="unknown">Unknown</option>
+  	<option value="windows">Windows</option>
+  	<option value="linux">Linux</option>
+  	<option value="solaris">Solaris</option>
+  	<option value="bsd">BSD</option>
+  	<option value="osx">Mac OS X</option>
+  </selection>
+  
+  <action-attrs name="action-operating-system-attrs-on-new">
+  	<attribute for="serverTypes" name="value:add" expr="eval: _parent.serverType" if="_parent?._model == 'com.axelor.apps.network.db.Server'"/>
+  </action-attrs>
+
+  <!-- MENU -->
+  <menuitem name="menu-operating-system" title="Operating Systems" action="action-view-operating-system" parent="menu-network-configuration"/>
+
+  <action-view name="action-view-operating-system" title="Operating Systems" model="com.axelor.apps.network.db.OperatingSystem" icon="img/16px/parameterSmall_16px.png">
+  	  <view type="grid" name="operating-system-grid"/>
+  	  <view type="form" name="operating-system-form"/>
+  </action-view>
+    
+</object-views>

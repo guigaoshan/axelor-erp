@@ -47,6 +47,7 @@
     <module>axelor-app</module>
     <module>axelor-parent</module>
     <module>axelor-marketing</module>
+    <module>axelor-network</module>
   </modules>
 
   <build>

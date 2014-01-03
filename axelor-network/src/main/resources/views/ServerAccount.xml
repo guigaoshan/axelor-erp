@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://apps.axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://apps.axelor.com/xml/ns/object-views http://apps.axelor.com/xml/ns/object-views/object-views_0.9.xsd">
+
+  <!-- VIEW -->
+  <grid name="server-account-grid" title="Hardware accounts">
+    <field name="server" />
+    <field name="partner" />
+    <field name="login" />
+    <field name="password" />
+  </grid>
+
+  <form name="server-account-form" title="Hardware account" cols="2">
+    <field name="server" form-view="server-form" grid-view="server-grid" required="true"/>
+    <field name="partner" grid-view="partner-grid" form-view="partner-form" />
+  	<field name="login" />
+  	<field name="password" />
+  </form>
+
+  <!-- MENU -->
+  <menuitem name="menu-server-account" title="Server accounts" action="action-view-server-account" parent="menu-network-configuration"/>
+
+  <action-view name="action-view-server-account" title="Server accounts" model="com.axelor.apps.network.db.ServerAccount" icon="img/16px/parameterSmall_16px.png">
+	<view type="grid" name="server-account-grid"/>
+	<view type="form" name="server-account-form"/>
+  </action-view>
+    
+</object-views>
