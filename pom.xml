@@ -48,6 +48,7 @@
     <module>axelor-parent</module>
     <module>axelor-marketing</module>
     <module>axelor-network</module>
+    <module>axelor-protraining</module>
   </modules>
 
   <build>

@@ -49,3 +49,9 @@
 [submodule "axelor-tool"]
 	path = axelor-tool
 	url = git@github.com:axelor/axelor-tool.git
+[submodule "axelor-protraining"]
+	path = axelor-protraining
+	url = git@github.com:axelor/axelor-protraining.git
+[submodule "axelor-network"]
+	path = axelor-network
+	url = git@github.com:axelor/axelor-network.git
